@@ -1,0 +1,27 @@
+<p>
+  customer works!
+</p>
+<table>
+  <tr>
+    <td>
+      CustomerCode
+    </td>
+    <td><input type="text"  (input)="CustomerCode = $event.target.value" /></td>
+  </tr>
+  <tr>
+    <td>Customer Name</td>
+    <td><input type="text" [(value)]='CustomerName'  (input)="CustomerName =$event.target.value"/></td>
+  </tr>
+  <tr>
+    <td>Customer Code</td>
+    <td>{{CustomerCode}}</td>
+  </tr>
+  <tr>
+    <td>
+      Customer Name
+    </td>
+    <td>
+      {{CustomerName}}
+    </td>
+  </tr>
+</table>
